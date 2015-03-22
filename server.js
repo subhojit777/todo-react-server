@@ -24,3 +24,5 @@ require('./app/routes.js')(app);
 // listen (start app with node server.js) ======================================
 app.listen(port);
 console.log("App listening on port " + port);
+
+app.use('/node_modules', express.static(__dirname + '/node_modules'));

@@ -54,7 +54,7 @@ module.exports = function(app) {
 	});
 
 	// application -------------------------------------------------------------
-	app.get('/api/todo', function(req, res) {
+	app.get('/', function(req, res) {
 		res.sendfile('./public/index.html');
 	});
 };
