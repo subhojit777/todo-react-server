@@ -1,6 +1,5 @@
 var JSX = require('node-jsx').install(),
 React = require('react'),
-TweetsApp = require('../components/TodoApp.react'),
 Todo = require('./models/todo');
 
 function getTodos(res){
