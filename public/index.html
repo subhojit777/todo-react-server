@@ -3,31 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>React _ Backbone • TodoMVC</title>
-    <link rel="stylesheet" href="../node_modules/todomvc-common/base.css">
-    <link rel="stylesheet" href="../node_modules/todomvc-app-css/index.css">
+		<title>React • Todo</title>
+    <script src="https://fb.me/react-0.13.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
 	</head>
 	<body>
-		<section id="todoapp"></section>
-		<footer id="info">
-			<p>Double-click to edit a todo</p>
-		</footer>
-
-    <script src="../node_modules/todomvc-common/base.js"></script>
-    <script src="../node_modules/react/dist/react-with-addons.js"></script>
-    <script src="../node_modules/react/dist/JSXTransformer.js"></script>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/underscore/underscore.js"></script>
-    <script src="../node_modules/backbone/backbone.js"></script>
-    <script src="../node_modules/backbone.localstorage/backbone.localStorage.js"></script>
-
-		<script src="../js/todo.js"></script>
-		<script src="../js/todos.js"></script>
-		<!-- jsx is an optional syntactic sugar that transforms methods in React's
-		`render` into an HTML-looking format. Since the two models above are
-		unrelated to React, we didn't need those transforms. -->
-		<script type="text/jsx" src="../js/todoItem.jsx"></script>
-		<script type="text/jsx" src="../js/footer.jsx"></script>
-		<script type="text/jsx" src="../js/app.jsx"></script>
+    <div id="content"></div>
+    <script src="../scripts/build/Todo.js"></script>
+    <script src="../scripts/build/TodoList.js"></script>
+    <script src="../scripts/build/TodoForm.js"></script>
+    <script src="../scripts/build/TodoBox.js"></script>
 	</body>
 </html>

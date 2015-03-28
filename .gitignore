@@ -26,3 +26,6 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Ignore built js files
+public/scripts/build/.module-cache/*
