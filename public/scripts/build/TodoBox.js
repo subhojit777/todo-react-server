@@ -32,8 +32,7 @@ var TodoBox = React.createClass({displayName: "TodoBox",
     $.ajax({
       url: this.props.url + '/' + id,
       dataType: 'json',
-      type: 'POST',
-      data: todo,
+      type: 'DELETE',
       success: function(data) {
         this.setState({data: data});
       }.bind(this),

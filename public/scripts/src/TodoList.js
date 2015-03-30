@@ -10,7 +10,7 @@ var TodoList = React.createClass({
           {todo.text}
         </Todo>
       );
-    });
+    }, this);
     return (
       <div className="todoList">
         {todoNodes}
