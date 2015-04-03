@@ -12,8 +12,10 @@ var TodoList = React.createClass({displayName: "TodoList",
       );
     }, this);
     return (
-      React.createElement("div", {className: "todoList"}, 
-        todoNodes
+      React.createElement("div", {className: "todoList row"}, 
+        React.createElement("div", {className: "col-md-4 col-md-offset-4"}, 
+          todoNodes
+        )
       )
     );
   }

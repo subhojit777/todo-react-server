@@ -51,7 +51,7 @@ var TodoBox = React.createClass({displayName: "TodoBox",
   },
   render: function() {
     return (
-      React.createElement("div", {className: "todoBox"}, 
+      React.createElement("div", {className: "todoBox container"}, 
         React.createElement(TodoHeader, {count: this.state.data.length}), 
         React.createElement(TodoList, {data: this.state.data, onTodoCheck: this.handleTodoCheck}), 
         React.createElement(TodoForm, {onTodoSubmit: this.handleTodoSubmit}), 

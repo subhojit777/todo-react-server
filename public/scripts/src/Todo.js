@@ -5,9 +5,10 @@ var Todo = React.createClass({
   },
   render: function() {
     return (
-      <div className="todo">
-        <input type="checkbox" onChange={this.handleCheck.bind(this, this.props.id)} ref="todoCheck" />
-        <label htmlFor="todo">{this.props.children}</label>
+      <div className="todo checkbox">
+        <label>
+          <input type="checkbox" onChange={this.handleCheck.bind(this, this.props.id)} ref="todoCheck" /> {this.props.children}
+        </label>
       </div>
     );
   }
