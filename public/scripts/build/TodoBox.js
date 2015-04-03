@@ -30,7 +30,7 @@ var TodoBox = React.createClass({displayName: "TodoBox",
   },
   handleTodoCheck: function(id) {
     $.ajax({
-      url: this.props.url + '/' + id,
+      url: this.props.url + '/' + id.id.id,
       dataType: 'json',
       type: 'DELETE',
       success: function(data) {
@@ -42,7 +42,9 @@ var TodoBox = React.createClass({displayName: "TodoBox",
     });
   },
   getInitialState: function() {
-    return {data: []};
+    return {
+      data: []
+    };
   },
   componentDidMount: function() {
     this.loadTodosFromServer();
