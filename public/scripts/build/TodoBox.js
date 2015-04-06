@@ -1,10 +1,14 @@
 var TodoBox = React.createClass({displayName: "TodoBox",
   loadTodosFromServer: function() {
+    $('.todoList .progress').removeClass('hidden');
+    $('.todoList .list').addClass('hidden');
     $.ajax({
       url: this.props.url,
       dataType: 'json',
       success: function(data) {
         this.setState({data: data});
+        $('.todoList .progress').addClass('hidden');
+        $('.todoList .list').removeClass('hidden');
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -25,16 +29,20 @@ var TodoBox = React.createClass({displayName: "TodoBox",
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
-      }.bind(this)
+      }.bind(this),
     });
   },
   handleTodoCheck: function(id) {
+    $('.todoList .progress').removeClass('hidden');
+    $('.todoList .list').addClass('hidden');
     $.ajax({
       url: this.props.url + '/' + id.id.id,
       dataType: 'json',
       type: 'DELETE',
       success: function(data) {
         this.setState({data: data});
+        $('.todoList .progress').addClass('hidden');
+        $('.todoList .list').removeClass('hidden');
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
