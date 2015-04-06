@@ -12,19 +12,20 @@ var TodoList = React.createClass({
       );
     }, this);
 
-    var progressBarStyle = {
-      width: '100%',
+    var style = {
+      width: '100%'
     };
 
     return (
-      <div className="todoList row">
-        <div className="list">
-          <div className="col-md-4 col-md-offset-4">
-            {todoNodes}
+      <div className="row todoList">
+        <div className="col-md-4 col-md-offset-4">
+          <div className="progress">
+            <div className="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style={style}>
+              <span className="sr-only">100% Complete</span>
+            </div>
           </div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style={progressBarStyle}>
+          <div className="list">
+            {todoNodes}
           </div>
         </div>
       </div>
