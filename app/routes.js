@@ -1,6 +1,4 @@
-var JSX = require('node-jsx').install(),
-React = require('react'),
-Todo = require('./models/todo');
+var Todo = require('./models/todo');
 
 function getTodos(res){
 	Todo.find(function(err, todos) {
