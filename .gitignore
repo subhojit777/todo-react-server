@@ -31,4 +31,4 @@ node_modules
 .lock-wscript
 
 # Ignore built js files
-public/scripts/build/.module-cache/*
+app/components-build/.module-cache/*
