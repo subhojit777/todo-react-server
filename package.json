@@ -2,39 +2,26 @@
   "name": "todo",
   "version": "0.0.0",
   "description": "Isomorphic React Example",
-  "main": "app.js",
-  "scripts": {
-    "watch": "watchify app.js -o public/js/bundle.js -v",
-    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
-    "build": "npm run browserify ",
-    "start": "npm install"
-  },
+  "main": "server.js",
   "author": "subhojit777",
   "dependencies": {
     "express": "~4.9.7",
     "mongoose": "^3.8.23",
-    "node-jsx": "~0.11.0",
     "morgan": "~1.2.2",
     "body-parser": "~1.5.2",
     "method-override": "~2.1.2",
-    "backbone": "^1.1.2",
-    "backbone.localstorage": "^1.1.7",
-    "jquery": "^2.1.0",
     "react": "^0.12.0",
-    "todomvc-app-css": "^1.0.0",
-    "todomvc-common": "^1.0.1",
-    "underscore": "^1.6.0"
+    "ejs": "~0.8.5",
+    "path": "*",
+    "jquery": "^2.1.0"
   },
   "devDependencies": {
-    "browserify": "~6.0.3",
-    "nodemon": "^1.2.1",
-    "reactify": "~0.14.0",
-    "uglify-js": "~2.4.15",
-    "watchify": "~2.0.0"
-  },
-  "browserify": {
-    "transform": [
-      "reactify"
-    ]
+    "browserify": "~3.20.0",
+    "gulp": "~3.8.9",
+    "gulp-browserify": "~0.5.0",
+    "gulp-concat": "~2.4.1",
+    "node-jsx": "~0.2.0",
+    "react-tools": "^0.12.0",
+    "reactify": "0.15.2"
   }
 }
